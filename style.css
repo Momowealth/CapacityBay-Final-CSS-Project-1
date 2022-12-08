@@ -98,7 +98,11 @@ nav ul li a:hover {
 .hamburger div:not(:last-child){
     margin-bottom: 5px;
 }
+<<<<<<< HEAD
 /* Imo and Doumo*/
+=======
+/* Imo */
+>>>>>>> 84ee7252e18c5d962f3d976010a8516a161b7c62
 .container{
     display: flex;
     justify-content: space-between;
@@ -107,6 +111,7 @@ nav ul li a:hover {
     width: 80%;
     margin: 0 auto;
 }
+<<<<<<< HEAD
 .content{
     margin: 90px 0 0 0;
     width: 40%;
@@ -134,6 +139,14 @@ nav ul li a:hover {
 }
 .get-started:hover{
     background-color: hsl(180, 66%, 55%);
+=======
+.illus{
+    margin: 70px 0 0 0;
+    width: 43%;
+}
+.illus img{
+    width: 100%;
+>>>>>>> 84ee7252e18c5d962f3d976010a8516a161b7c62
 }
 
 /* HEADER RESPONSIVENESS: */
@@ -152,6 +165,235 @@ nav ul li a:hover {
         display: none;
     }
 }
+.linkss{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+}
+.link{
+    background-color: rgb(241, 240, 240);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.link-but{
+    display: flex;
+    justify-content: center;
+}
+.link-p{
+    word-break: break-all;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.link-but p{
+    color: var(--Cyan);
+    align-items: center;
+}
+.link-copi{
+    cursor: pointer;
+    color: white;
+    background-color: var(--Cyan);
+    padding: 10px 20px;    
+    border-radius: 5px;
+    border: none;
+}
+.link-copi:hover{
+    background-color: hsl(180, 66%, 55%)
+}
+.link-copied{
+    color: white;
+    background-color: var(--DarkViolet);
+    padding: 10px 13px;    
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.link-copied:hover{
+    background-color: var(--Red);
+}
+hr{
+    display: none;
+    margin: 10px 0;
+    
+}
+/* SHORTEN LINK RESPONSIVENESS WRITTEN BY STEPHEN */
+@media (max-width: 1200px){
+    .linkss{
+    width: 90%;
+    }
+}
+@media (max-width:576px){
+    .links{
+        text-align: center;
+    }
+    .link{
+        display: grid;
+    }
+    .link-but{
+        display: grid;
+        justify-content: left;
+    }
+    .link-copi{
+        padding: 10px 100%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .link-copied{
+        padding: 10px 92%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .link-p{
+        font-size: 4vw;
+        text-align: left;
+    }
+    hr{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width:425px){
+    .link-copi{
+        padding: 10px 96%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+    }
+    .link-copied{
+        padding: 10px 89%;
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-left: none;
+        border: none;
+    }
+}
+
+
+/* SHORTEN LINK SECTION STYLYING */
+
+/* James Obaji's Contribution to section class=links */
+.linkss{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 14px;
+}
+.link-section{
+    background-image: url(./images/bg-shorten-desktop.svg);
+    background-size: cover;
+    background-color: var(--GrayishViolet);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shorten-it{
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: var(--Cyan);
+    padding: 7px 20px;
+    border-radius: 10px;
+    max-width: 1024px;
+    width: 20%;
+    height: 40px;
+    border: none;
+}
+.shorten-it:hover{
+    background-color: hsl(180, 66%, 55%)
+}
+input{
+padding: 10px;
+margin-right:10px;
+border-radius: 10px;
+width: 75%;
+border: solid var(--Red);
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color: var(--Red);
+}
+.p-link{
+    color: var(--Red);
+    font-style: italic;
+    margin: 5px;
+}
+.p-link2{
+    color: var(--Red);
+    font-style: italic;
+    display: none;
+    margin: 5px;
+}
+/* End of James Obaji's section class=linkss styling contribution */
+
+/* Responsive of James Obaji's section class=linkss contribution */
+@media (max-width: 1200px){
+    .linkss{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 768px){
+    input{
+        margin-right: 10px;
+        }
+        .shorten-it{
+            width: 20%;
+            height: 40px;
+            font-size: 2vw;
+        }
+        
+}
+@media (max-width:576px){
+    .link-section{
+        background-image: url(./images/bg-shorten-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        }
+        .shorten-it{
+            width: 100%;
+            height: 50px;
+            font-size: 4vw;
+        }
+        .p-link{
+            display: none;
+        }
+        .p-link2{
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    
+    @media (max-width:425px){
+        .link-section{
+            background-image: url(./images/bg-shorten-mobile.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .p-link{
+            display: none;
+        }
+    }
+    /* End of James Obaji's Responsiveness to Section class=linkss */
 
 /* Doumo and Imo Peter's Styling: */
 @media(max-width:1237px){
@@ -204,5 +446,232 @@ nav ul li a:hover {
     }  
 }
 
+/* Imo's Contribution for the responsiveness */
+@media (max-width: 522px){
+    .illus{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+}
+
 
 /* End of Doumo and Imo Peter's Styling. */
+
+/* Yusuf and Ombimdike styling */
+
+footer{
+    background-color: var(--VeryDarkViolet);
+}
+
+.logo{
+    color: white;
+}
+.logo p{
+   font-size: 23px;
+   font-weight: bold;
+}
+ .soc-handles{
+    display: flex;
+    justify-content: space-between;
+    width:100px;
+    align-items: center;
+ 
+}
+
+.soc-handles ul{
+    display: flex;
+    margin-left: 50px;
+}
+.soc-handles ul li{
+   justify-content: space-around;
+   width: 50px;
+}
+
+.soc-handles a{
+   color: white;
+   font-size: 15px;
+}
+.soc-handles a:hover{
+   color:var(--Cyan);
+} 
+
+@media screen and (max-width:360px){
+    
+     .soc-handles ul{
+       display: none;
+    } 
+}
+/* End of Yusuf and Ombidike styling */
+
+footer{
+    background: var(--VeryDarkBlue);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px 130px;
+}
+
+footer div h4{
+    color: #fff;
+}
+footer div ul li a{
+    color: var(--Gray);
+    font-size: 12px;
+}
+footer div ul li a:hover{
+    color: rgb(15, 185, 252);
+}
+
+/* Footer Responsiveness */
+
+
+@media (max-width: 1000px){
+    footer{
+        display: block;
+     }
+   
+}
+
+/* Nuel Chuks' Styling: */
+.advanced {
+    background-color: rgb(247, 239, 239);
+    height: 100vh;
+    width: 80%;
+    position: relative;
+    margin-top: 3%;
+    padding-top: 8%;
+    margin-left: 10%;
+    text-align: center;
+   
+}
+.head {
+    margin-bottom: 3%;
+}
+.head > p {
+    color: var(--GrayishViolet); 
+    line-height: 1.7em;
+    font-weight: 500;
+}
+.head > h1 {
+    color:  var(--VeryDarkViolet);
+}
+h1 {
+    margin-bottom: 2%;
+}
+.features {
+    position: relative;
+    display: flex;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+.box1 > p {
+    font-size: 14px;
+    color: var(--GrayishViolet);
+    line-height: 1.7em;
+}
+h3 {
+    margin-bottom: 4%;
+    font-size: large;
+    color: var(--VeryDarkViolet);
+}
+.box1 {
+    position: absolute;
+    background-color: white;
+    padding: 80px 25px 35px;
+    text-align: justify;
+    border-radius: 10px;
+    margin-left: 2%;
+    
+}
+#img1 {
+    position: absolute;
+    background-color: var(--VeryDarkViolet);
+    border-radius: 50%;
+    padding: 18px;
+    top: -30px;
+}
+/* End of Nuel Chucks styling*/
+
+/* Nuel Container Responsiveness */
+@media  (max-width: 768px) {
+
+    .advanced {
+        right: 5%;
+        height: 1100px;
+        width: 690px;
+    }
+    .features {
+        display: block;
+        margin-top: 10%;
+        width: 100vw;
+       
+    }
+    .box1 {
+        margin-left: 28%;
+        padding: 80px 20px 35px;
+        text-align: center;
+       width: 300px;
+    }
+    #img1 {
+        margin-left: -9%;
+    }
+}
+/*End of Nuel Container Responsiveness */
+
+/* Praise Ayodele and Akukwe Olivia's Styling. */
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom p{
+    color: hite;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.bottom button{
+    width: 14%;
+    background-color: var(--Cyan);
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.bottom button:hover{
+    background-color: rgb(143, 235, 235);
+}
+
+@media (max-width:1200px){
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 10vh;
+    }
+    .bottom p{
+        color: hite;
+        font-size: 30px;
+    }
+    .bottom button{
+        width: 30%;
+        padding-block: 10px;
+        border-radius: 30px;
+        background-color: var(--Cyan);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+/* End of Praise Ayodele and Akukwe Olivia's Styling */
